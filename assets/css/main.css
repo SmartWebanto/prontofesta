@@ -11,9 +11,10 @@
     --color-white: #FFFFFF;
     --color-gray: #F5F5F3;
     --color-text: #2D2D2D;
-    --color-rosa: #D4A5A5;
+    --color-rosa: #956B6B;
+    --color-rosa-soft: #D4A5A5;
     --color-rosa-light: #E8CFCF;
-    --color-rosa-dark: #B88A8A;
+    --color-rosa-dark: #7A5555;
 
     /* WhatsApp */
     --color-whatsapp: #25D366;
@@ -155,6 +156,10 @@ html {
 
 .nav-link:hover::after {
     width: 100%;
+}
+
+.nav-link:hover {
+    color: var(--color-rosa-dark);
 }
 
 /* Mega Menu */

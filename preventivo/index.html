@@ -13,6 +13,8 @@
     <meta property="og:url" content="https://prontofesta.com/preventivo/">
     <meta property="og:image" content="https://prontofesta.com/assets/images/og-preventivo.jpg">
 
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+
     <!-- Canonical -->
     <link rel="canonical" href="https://prontofesta.com/preventivo/">
 
@@ -36,9 +38,10 @@
                         'bianco': '#FFFFFF',
                         'grigio': '#F5F5F3',
                         'testo': '#2D2D2D',
-                        'rosa': '#D4A5A5',
+                        'rosa': '#956B6B',
+                        'rosa-soft': '#D4A5A5',
                         'rosa-light': '#E8CFCF',
-                        'rosa-dark': '#B88A8A',
+                        'rosa-dark': '#7A5555',
                     },
                     fontFamily: {
                         'heading': ['Cormorant Garamond', 'Georgia', 'serif'],
@@ -192,7 +195,9 @@
                 </div>
 
                 <!-- Form -->
-                <form id="multi-step-form" class="bg-bianco rounded-2xl shadow-medium p-8 reveal">
+                <form id="multi-step-form" name="preventivo" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="bg-bianco rounded-2xl shadow-medium p-8 reveal">
+                    <input type="hidden" name="form-name" value="preventivo">
+                    <p class="hidden"><label>Non compilare: <input name="bot-field"></label></p>
                     <!-- Step 1: Tipo di Evento -->
                     <div class="form-step active" data-step="1">
                         <h2 class="font-heading text-3xl font-bold text-testo mb-2">Che tipo di evento stai organizzando?</h2>
@@ -569,15 +574,15 @@
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                 <div>
-                    <h3 class="font-heading text-2xl font-bold mb-4">Pronto<span class="text-rosa">Festa</span></h3>
+                    <h3 class="font-heading text-2xl font-bold mb-4">Pronto<span class="text-rosa-soft">Festa</span></h3>
                     <p class="text-gray-400 mb-6">
                         Catering artigianale a Roma per feste ed eventi speciali. Qualita, passione e servizio a domicilio.
                     </p>
                     <div class="flex gap-4">
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-rosa transition-colors">
+                        <a href="https://www.facebook.com/prontofesta" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-rosa-soft transition-colors" aria-label="Facebook">
                             <i data-lucide="facebook" class="w-5 h-5"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-rosa transition-colors">
+                        <a href="https://www.instagram.com/prontofesta" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-rosa-soft transition-colors" aria-label="Instagram">
                             <i data-lucide="instagram" class="w-5 h-5"></i>
                         </a>
                     </div>
@@ -586,22 +591,22 @@
                 <div>
                     <h4 class="font-heading text-lg font-bold mb-4">Servizi</h4>
                     <ul class="space-y-2">
-                        <li><a href="/catering-feste-bambini-roma/" class="text-gray-400 hover:text-rosa transition-colors">Feste Bambini</a></li>
-                        <li><a href="/catering-18-anni-roma/" class="text-gray-400 hover:text-rosa transition-colors">Feste 18 Anni</a></li>
-                        <li><a href="/catering-matrimoni-roma/" class="text-gray-400 hover:text-rosa transition-colors">Matrimoni</a></li>
-                        <li><a href="/catering-battesimo-roma/" class="text-gray-400 hover:text-rosa transition-colors">Battesimi</a></li>
-                        <li><a href="/catering-a-domicilio-roma/" class="text-gray-400 hover:text-rosa transition-colors">Catering a Domicilio</a></li>
+                        <li><a href="/catering-feste-bambini-roma/" class="text-gray-400 hover:text-rosa-soft transition-colors">Feste Bambini</a></li>
+                        <li><a href="/catering-18-anni-roma/" class="text-gray-400 hover:text-rosa-soft transition-colors">Feste 18 Anni</a></li>
+                        <li><a href="/catering-matrimoni-roma/" class="text-gray-400 hover:text-rosa-soft transition-colors">Matrimoni</a></li>
+                        <li><a href="/catering-battesimo-roma/" class="text-gray-400 hover:text-rosa-soft transition-colors">Battesimi</a></li>
+                        <li><a href="/catering-a-domicilio-roma/" class="text-gray-400 hover:text-rosa-soft transition-colors">Catering a Domicilio</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 class="font-heading text-lg font-bold mb-4">Link Utili</h4>
                     <ul class="space-y-2">
-                        <li><a href="/chi-siamo/" class="text-gray-400 hover:text-rosa transition-colors">Chi Siamo</a></li>
-                        <li><a href="/menu-prezzi/" class="text-gray-400 hover:text-rosa transition-colors">Menu e Prezzi</a></li>
-                        <li><a href="/gallery/" class="text-gray-400 hover:text-rosa transition-colors">Gallery</a></li>
-                        <li><a href="/recensioni/" class="text-gray-400 hover:text-rosa transition-colors">Recensioni</a></li>
-                        <li><a href="/faq/" class="text-gray-400 hover:text-rosa transition-colors">FAQ</a></li>
+                        <li><a href="/chi-siamo/" class="text-gray-400 hover:text-rosa-soft transition-colors">Chi Siamo</a></li>
+                        <li><a href="/menu-prezzi/" class="text-gray-400 hover:text-rosa-soft transition-colors">Menu e Prezzi</a></li>
+                        <li><a href="/gallery/" class="text-gray-400 hover:text-rosa-soft transition-colors">Gallery</a></li>
+                        <li><a href="/recensioni/" class="text-gray-400 hover:text-rosa-soft transition-colors">Recensioni</a></li>
+                        <li><a href="/faq/" class="text-gray-400 hover:text-rosa-soft transition-colors">FAQ</a></li>
                     </ul>
                 </div>
 
@@ -613,13 +618,13 @@
                             <span class="text-gray-400">Via Roma 123<br>00100 Roma (RM)</span>
                         </li>
                         <li>
-                            <a href="tel:+393331234567" class="flex items-center gap-3 text-gray-400 hover:text-rosa transition-colors">
+                            <a href="tel:+393331234567" class="flex items-center gap-3 text-gray-400 hover:text-rosa-soft transition-colors">
                                 <i data-lucide="phone" class="w-5 h-5 text-rosa"></i>
                                 +39 333 123 4567
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:info@prontofesta.com" class="flex items-center gap-3 text-gray-400 hover:text-rosa transition-colors">
+                            <a href="mailto:info@prontofesta.com" class="flex items-center gap-3 text-gray-400 hover:text-rosa-soft transition-colors">
                                 <i data-lucide="mail" class="w-5 h-5 text-rosa"></i>
                                 info@prontofesta.com
                             </a>
@@ -633,8 +638,8 @@
                     &copy; 2024 Pronto Festa Roma. Tutti i diritti riservati. P.IVA 01234567890
                 </p>
                 <div class="flex gap-6 text-sm">
-                    <a href="/privacy/" class="text-gray-500 hover:text-rosa transition-colors">Privacy Policy</a>
-                    <a href="/cookie/" class="text-gray-500 hover:text-rosa transition-colors">Cookie Policy</a>
+                    <a href="/privacy/" class="text-gray-500 hover:text-rosa-soft transition-colors">Privacy Policy</a>
+                    <a href="/cookie/" class="text-gray-500 hover:text-rosa-soft transition-colors">Cookie Policy</a>
                 </div>
             </div>
         </div>
@@ -656,7 +661,6 @@
     <!-- JavaScript -->
     <script src="/assets/js/main.js"></script>
 
-    <!-- Event Type Selection Script -->
     <script>
         // Event type card selection
         document.querySelectorAll('.event-type-card input').forEach(input => {
@@ -672,24 +676,40 @@
             });
         });
 
-        // Update step indicator
         const stepIndicator = document.getElementById('step-indicator');
         const progressFill = document.getElementById('progress-fill');
-
-        function updateProgress(step) {
-            const totalSteps = 4;
-            stepIndicator.textContent = `Step ${step} di ${totalSteps}`;
-            progressFill.style.width = `${(step / totalSteps) * 100}%`;
-        }
-
-        // Override form navigation to update progress
         const form = document.getElementById('multi-step-form');
         const nextBtn = form.querySelector('.next-btn');
         const prevBtn = form.querySelector('.prev-btn');
-
         let currentFormStep = 1;
 
+        function updateProgress(step) {
+            stepIndicator.textContent = 'Step ' + step + ' di 4';
+            progressFill.style.width = (step / 4) * 100 + '%';
+        }
+
+        function validateStep(step) {
+            const currentStepEl = form.querySelector('[data-step="' + step + '"]');
+            if (step === 1) {
+                const selected = currentStepEl.querySelector('input[name="tipo_evento"]:checked');
+                if (!selected) {
+                    alert('Seleziona il tipo di evento per continuare.');
+                    return false;
+                }
+            }
+            const requiredFields = currentStepEl.querySelectorAll('[required]');
+            for (const field of requiredFields) {
+                if (!field.value.trim()) {
+                    field.focus();
+                    field.reportValidity();
+                    return false;
+                }
+            }
+            return true;
+        }
+
         nextBtn.addEventListener('click', () => {
+            if (!validateStep(currentFormStep)) return;
             if (currentFormStep < 4) {
                 currentFormStep++;
                 updateProgress(currentFormStep);
@@ -701,6 +721,46 @@
                 currentFormStep--;
                 updateProgress(currentFormStep);
             }
+        });
+
+        // Netlify Forms submission
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (!validateStep(currentFormStep)) return;
+
+            const submitBtn = form.querySelector('.submit-btn');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Invio in corso...';
+
+            const formData = new FormData(form);
+
+            fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(formData).toString()
+            })
+            .then(function(response) {
+                if (response.ok) {
+                    form.innerHTML = '<div class="text-center py-12">' +
+                        '<div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">' +
+                        '<svg class="w-10 h-10 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>' +
+                        '</div>' +
+                        '<h2 class="font-heading text-3xl font-bold text-testo mb-4">Richiesta inviata!</h2>' +
+                        '<p class="text-gray-600 text-lg mb-6">Ti risponderemo entro 24 ore con un preventivo personalizzato.</p>' +
+                        '<a href="/" class="btn btn-primary">Torna alla Home</a>' +
+                        '</div>';
+                    stepIndicator.textContent = 'Completato';
+                    progressFill.style.width = '100%';
+                } else {
+                    throw new Error('Errore invio');
+                }
+            })
+            .catch(function() {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Invia Richiesta <i data-lucide="send" class="w-5 h-5"></i>';
+                alert('Si \u00e8 verificato un errore. Riprova o contattaci via WhatsApp.');
+                if (typeof lucide !== 'undefined') lucide.createIcons();
+            });
         });
     </script>
 </body>
