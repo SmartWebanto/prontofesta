@@ -1,0 +1,25 @@
+# robots.txt for Pronto Festa Roma
+# https://prontofesta.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://prontofesta.com/sitemap.xml
+
+# Crawl-delay (optional, be gentle with the server)
+Crawl-delay: 1
+
+# Block common directories that shouldn't be indexed
+Disallow: /assets/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Allow CSS and JS for proper rendering
+Allow: /assets/css/
+Allow: /assets/js/
+
+# Block temporary and backup files
+Disallow: /*.bak$
+Disallow: /*.tmp$
+Disallow: /*~$

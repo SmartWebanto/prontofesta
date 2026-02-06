@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Homepage -->
+    <url>
+        <loc>https://prontofesta.com/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- L1 - Catering Domicilio -->
+    <url>
+        <loc>https://prontofesta.com/catering-a-domicilio-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/rinfreschi-a-domicilio-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/buffet-a-domicilio-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- L2 - Domicilio Landing -->
+    <url>
+        <loc>https://prontofesta.com/buffet-freddo-a-domicilio-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/catering-last-minute-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- L1 - Economico/Prezzi -->
+    <url>
+        <loc>https://prontofesta.com/catering-economico-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/menu-prezzi/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- L2 - Economico Landing -->
+    <url>
+        <loc>https://prontofesta.com/rinfresco-economico-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- L1 - Cerimonie -->
+    <url>
+        <loc>https://prontofesta.com/catering-matrimoni-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/catering-battesimo-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/catering-comunione-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/catering-eventi-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- L2 - Cerimonie Landing -->
+    <url>
+        <loc>https://prontofesta.com/rinfresco-laurea-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- L1 - Feste Bambini (Pillar) -->
+    <url>
+        <loc>https://prontofesta.com/catering-feste-bambini-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- L2 - Bambini Landing -->
+    <url>
+        <loc>https://prontofesta.com/buffet-compleanno-bambini-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/pacchetti-festa-bambini-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/box-merenda-compleanno/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/torta-primo-compleanno-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- L1 - Feste 18 Anni (Pillar) -->
+    <url>
+        <loc>https://prontofesta.com/catering-18-anni-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- L2 - 18 Anni Landing -->
+    <url>
+        <loc>https://prontofesta.com/buffet-18esimo-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/18esimo-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- L1 - Prodotti Tipici -->
+    <url>
+        <loc>https://prontofesta.com/pizzette-rosse-catering-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/bottoncini-farciti-feste-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/rustici-mignon-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/tramezzini-feste-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- L2 - Prodotti Landing -->
+    <url>
+        <loc>https://prontofesta.com/pasticceria-salata-mignon-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- L2 - GEO Roma Nord -->
+    <url>
+        <loc>https://prontofesta.com/catering-olgiata/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/catering-formello/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/catering-cassia-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/catering-ponte-milvio/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/catering-vigna-clara/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/catering-fleming-roma/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/feste-bambini-cassia/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- L1 - Pagine Istituzionali -->
+    <url>
+        <loc>https://prontofesta.com/chi-siamo/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/contatti/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/preventivo/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/gallery/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/recensioni/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/faq/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <!-- Legal -->
+    <url>
+        <loc>https://prontofesta.com/privacy/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://prontofesta.com/cookie/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+</urlset>

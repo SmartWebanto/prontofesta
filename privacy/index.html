@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Pronto Festa Roma</title>
+    <meta name="description" content="Informativa sulla privacy di Pronto Festa Roma. Come trattiamo i tuoi dati personali secondo il GDPR.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://prontofesta.com/privacy/">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bianco': '#FFFFFF',
+                        'grigio': '#F5F5F3',
+                        'testo': '#2D2D2D',
+                        'rosa': '#D4A5A5',
+                        'rosa-light': '#E8CFCF',
+                        'rosa-dark': '#B88A8A',
+                    },
+                    fontFamily: {
+                        'heading': ['Cormorant Garamond', 'Georgia', 'serif'],
+                        'body': ['DM Sans', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="font-body bg-bianco text-testo overflow-x-hidden">
+
+    <!-- Background Decorations -->
+    <div class="blob-shape bg-rosa-light w-96 h-96 rounded-full top-0 left-0 -translate-x-1/2 -translate-y-1/2 fixed"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 bg-bianco/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="flex items-center gap-2">
+                    <span class="font-heading text-2xl md:text-3xl font-bold text-testo">Pronto<span class="text-rosa">Festa</span></span>
+                </a>
+
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="/menu-prezzi/" class="nav-link font-medium py-2">Menu & Prezzi</a>
+                    <a href="/gallery/" class="nav-link font-medium py-2">Gallery</a>
+                    <a href="/chi-siamo/" class="nav-link font-medium py-2">Chi Siamo</a>
+                    <a href="/contatti/" class="nav-link font-medium py-2">Contatti</a>
+                    <a href="/preventivo/" class="btn btn-primary">Preventivo Gratuito</a>
+                </div>
+
+                <button id="mobile-menu-button" class="lg:hidden p-2" aria-label="Apri menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-8">
+                <span class="font-heading text-xl font-bold">Menu</span>
+                <button id="mobile-menu-close" class="p-2" aria-label="Chiudi menu">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <nav class="space-y-4">
+                <a href="/" class="mobile-menu-link block py-3 border-b border-grigio font-medium">Home</a>
+                <a href="/menu-prezzi/" class="mobile-menu-link block py-3 border-b border-grigio">Menu & Prezzi</a>
+                <a href="/gallery/" class="mobile-menu-link block py-3 border-b border-grigio">Gallery</a>
+                <a href="/chi-siamo/" class="mobile-menu-link block py-3 border-b border-grigio">Chi Siamo</a>
+                <a href="/contatti/" class="mobile-menu-link block py-3 border-b border-grigio">Contatti</a>
+                <a href="/preventivo/" class="btn btn-primary w-full mt-6">Richiedi Preventivo</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero-compact bg-grigio relative">
+        <div class="container mx-auto px-6">
+            <nav class="breadcrumb mb-6 reveal">
+                <a href="/">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <span>Privacy Policy</span>
+            </nav>
+
+            <div class="max-w-3xl reveal">
+                <h1 class="font-heading text-4xl md:text-5xl font-bold text-testo mb-6">
+                    Privacy <span class="text-rosa">Policy</span>
+                </h1>
+                <p class="text-gray-600">
+                    Ultimo aggiornamento: Gennaio 2024
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto prose prose-lg">
+
+                <div class="reveal">
+                    <h2 class="font-heading text-2xl font-bold text-testo mb-4">1. Titolare del Trattamento</h2>
+                    <p class="text-gray-600 mb-6">
+                        Il Titolare del trattamento dei dati e Pronto Festa S.r.l., con sede in Via Roma 123, 00100 Roma (RM),
+                        P.IVA 01234567890, email: info@prontofesta.com, telefono: +39 333 123 4567.
+                    </p>
+                </div>
+
+                <div class="reveal">
+                    <h2 class="font-heading text-2xl font-bold text-testo mb-4">2. Tipologia di Dati Raccolti</h2>
+                    <p class="text-gray-600 mb-4">
+                        I dati personali raccolti attraverso questo sito web includono:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                        <li>Dati identificativi: nome, cognome, indirizzo email, numero di telefono</li>
+                        <li>Dati relativi all'evento: data, luogo, numero di partecipanti, tipo di evento</li>
+                        <li>Dati di navigazione: indirizzo IP, browser, sistema operativo, pagine visitate</li>
+                        <li>Cookie tecnici e analitici (vedi Cookie Policy)</li>
+                    </ul>
+                </div>
+
+                <div class="reveal">
+                    <h2 class="font-heading text-2xl font-bold text-testo mb-4">3. Finalita del Trattamento</h2>
+                    <p class="text-gray-600 mb-4">
+                        I dati personali sono trattati per le seguenti finalita:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                        <li>Rispondere alle richieste di preventivo e informazioni</li>
+                        <li>Gestire prenotazioni e ordini di servizi catering</li>
+                        <li>Adempiere agli obblighi contrattuali e fiscali</li>
+                        <li>Inviare comunicazioni commerciali (previo consenso)</li>
+                        <li>Migliorare il servizio attraverso analisi statistiche anonime</li>
+                    </ul>
+                </div>
+
+                <div class="reveal">
+                    <h2 class="font-heading text-2xl font-bold text-testo mb-4">4. Base Giuridica del Trattamento</h2>
+                    <p class="text-gray-600 mb-6">
+                        Il trattamento dei dati si basa su: esecuzione di misure precontrattuali e contrattuali (art. 6.1.b GDPR),
+                        adempimento di obblighi legali (art. 6.1.c GDPR), consenso dell'interessato per finalita di marketing (art. 6.1.a GDPR),
+                        legittimo interesse per analisi statistiche aggregate (art. 6.1.f GDPR).
+                    </p>
+                </div>
+
+                <div class="reveal">
+                    <h2 class="font-heading text-2xl font-bold text-testo mb-4">5. Conservazione dei Dati</h2>
+                    <p class="text-gray-600 mb-6">
+                        I dati personali sono conservati per il tempo necessario alle finalita per cui sono stati raccolti:
+                        i dati contrattuali per 10 anni dalla cessazione del rapporto, i dati di navigazione per 24 mesi,
+                        i dati per finalita di marketing fino alla revoca del consenso.
+                    </p>
+                </div>
+
+                <div class="reveal">
+                    <h2 class="font-heading text-2xl font-bold text-testo mb-4">6. Destinatari dei Dati</h2>
+                    <p class="text-gray-600 mb-6">
+                        I dati possono essere comunicati a: personale autorizzato del Titolare, fornitori di servizi tecnici
+                        (hosting, email), consulenti fiscali e legali, autorita competenti quando richiesto dalla legge.
+                        I dati non vengono trasferiti fuori dall'Unione Europea.
+                    </p>
+                </div>
+
+                <div class="reveal">
+                    <h2 class="font-heading text-2xl font-bold text-testo mb-4">7. Diritti dell'Interessato</h2>
+                    <p class="text-gray-600 mb-4">
+                        Ai sensi degli articoli 15-22 del GDPR, l'interessato ha diritto di:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                        <li>Accedere ai propri dati personali</li>
+                        <li>Ottenere la rettifica dei dati inesatti</li>
+                        <li>Ottenere la cancellazione dei dati (diritto all'oblio)</li>
+                        <li>Limitare il trattamento</li>
+                        <li>Opporsi al trattamento</li>
+                        <li>Ricevere i dati in formato strutturato (portabilita)</li>
+                        <li>Revocare il consenso in qualsiasi momento</li>
+                        <li>Proporre reclamo all'Autorita Garante per la protezione dei dati personali</li>
+                    </ul>
+                </div>
+
+                <div class="reveal">
+                    <h2 class="font-heading text-2xl font-bold text-testo mb-4">8. Sicurezza dei Dati</h2>
+                    <p class="text-gray-600 mb-6">
+                        Adottiamo misure tecniche e organizzative appropriate per proteggere i dati personali da accessi non autorizzati,
+                        perdita, distruzione o divulgazione. Il sito utilizza protocollo HTTPS per la trasmissione sicura dei dati.
+                    </p>
+                </div>
+
+                <div class="reveal">
+                    <h2 class="font-heading text-2xl font-bold text-testo mb-4">9. Contatti</h2>
+                    <p class="text-gray-600 mb-6">
+                        Per esercitare i propri diritti o per qualsiasi informazione relativa al trattamento dei dati personali,
+                        e possibile contattare il Titolare all'indirizzo email: privacy@prontofesta.com
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-testo text-bianco pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="font-heading text-2xl font-bold mb-4">Pronto<span class="text-rosa">Festa</span></h3>
+                    <p class="text-gray-400 mb-6">
+                        Catering artigianale a Roma per feste ed eventi speciali.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-4">Servizi</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/catering-feste-bambini-roma/" class="text-gray-400 hover:text-rosa transition-colors">Feste Bambini</a></li>
+                        <li><a href="/catering-18-anni-roma/" class="text-gray-400 hover:text-rosa transition-colors">Feste 18 Anni</a></li>
+                        <li><a href="/catering-matrimoni-roma/" class="text-gray-400 hover:text-rosa transition-colors">Matrimoni</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-4">Link Utili</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/chi-siamo/" class="text-gray-400 hover:text-rosa transition-colors">Chi Siamo</a></li>
+                        <li><a href="/menu-prezzi/" class="text-gray-400 hover:text-rosa transition-colors">Menu e Prezzi</a></li>
+                        <li><a href="/faq/" class="text-gray-400 hover:text-rosa transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-4">Contatti</h4>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="tel:+393331234567" class="flex items-center gap-3 text-gray-400 hover:text-rosa transition-colors">
+                                <i data-lucide="phone" class="w-5 h-5 text-rosa"></i>
+                                +39 333 123 4567
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@prontofesta.com" class="flex items-center gap-3 text-gray-400 hover:text-rosa transition-colors">
+                                <i data-lucide="mail" class="w-5 h-5 text-rosa"></i>
+                                info@prontofesta.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">
+                    &copy; 2024 Pronto Festa Roma. Tutti i diritti riservati. P.IVA 01234567890
+                </p>
+                <div class="flex gap-6 text-sm">
+                    <a href="/privacy/" class="text-rosa">Privacy Policy</a>
+                    <a href="/cookie/" class="text-gray-500 hover:text-rosa transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

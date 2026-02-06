@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustici Mignon per Feste Roma | Sfogliatine Salate Catering</title>
+    <meta name="description" content="Rustici mignon per feste a Roma: sfogliatine salate croccanti con ripieni gustosi. Ideali per buffet, compleanni e aperitivi. Consegna a domicilio in tutta Roma.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Rustici Mignon per Feste Roma | Sfogliatine Salate">
+    <meta property="og:description" content="Rustici mignon artigianali per il tuo catering a Roma. Sfoglia croccante e ripieni saporiti per buffet e feste. Consegna a domicilio.">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://prontofesta.com/rustici-mignon-roma/">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://prontofesta.com/rustici-mignon-roma/">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bianco': '#FFFFFF',
+                        'grigio': '#F5F5F3',
+                        'testo': '#2D2D2D',
+                        'rosa': '#D4A5A5',
+                        'rosa-light': '#E8CFCF',
+                        'rosa-dark': '#B88A8A',
+                    },
+                    fontFamily: {
+                        'heading': ['Cormorant Garamond', 'Georgia', 'serif'],
+                        'body': ['DM Sans', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- Schema.org Product -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Rustici Mignon per Feste",
+        "description": "Rustici mignon artigianali, sfogliatine salate croccanti con ripieni gustosi. Perfetti per feste, buffet e aperitivi a Roma.",
+        "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&q=80&w=800",
+        "brand": {
+            "@type": "Brand",
+            "name": "Pronto Festa Roma"
+        },
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "EUR",
+            "price": "1.30",
+            "priceValidUntil": "2025-12-31",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+                "@type": "LocalBusiness",
+                "name": "Pronto Festa Roma",
+                "areaServed": "Roma"
+            }
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "156"
+        }
+    }
+    </script>
+</head>
+<body class="font-body bg-bianco text-testo">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 bg-bianco/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="font-heading text-2xl md:text-3xl font-bold text-testo">Pronto<span class="text-rosa">Festa</span></a>
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="/catering-feste-bambini-roma/" class="nav-link font-medium py-2">Feste Bambini</a>
+                    <a href="/catering-18-anni-roma/" class="nav-link font-medium py-2">Feste 18 Anni</a>
+                    <a href="/catering-a-domicilio-roma/" class="nav-link font-medium py-2">A Domicilio</a>
+                    <a href="/menu-prezzi/" class="nav-link font-medium py-2">Menu & Prezzi</a>
+                    <a href="/contatti/" class="nav-link font-medium py-2">Contatti</a>
+                    <a href="/preventivo/" class="btn btn-primary">Preventivo Gratuito</a>
+                </div>
+                <button id="mobile-menu-button" class="lg:hidden p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-8">
+                <span class="font-heading text-xl font-bold">Menu</span>
+                <button id="mobile-menu-close" class="p-2"><i data-lucide="x" class="w-6 h-6"></i></button>
+            </div>
+            <nav class="space-y-4">
+                <a href="/" class="mobile-menu-link block py-3 border-b border-grigio">Home</a>
+                <a href="/catering-feste-bambini-roma/" class="mobile-menu-link block py-3 border-b border-grigio">Feste Bambini</a>
+                <a href="/catering-18-anni-roma/" class="mobile-menu-link block py-3 border-b border-grigio">Feste 18 Anni</a>
+                <a href="/menu-prezzi/" class="mobile-menu-link block py-3 border-b border-grigio">Menu & Prezzi</a>
+                <a href="/contatti/" class="mobile-menu-link block py-3 border-b border-grigio">Contatti</a>
+                <a href="/preventivo/" class="btn btn-primary w-full mt-6">Richiedi Preventivo</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="pt-24 pb-4 bg-grigio">
+        <div class="container mx-auto px-6">
+            <nav class="breadcrumb">
+                <a href="/">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <a href="/menu-prezzi/">Menu</a>
+                <span class="breadcrumb-separator">/</span>
+                <span>Rustici Mignon per Feste Roma</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section - Product -->
+    <header class="bg-grigio pb-20">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                    <span class="inline-block py-2 px-4 rounded-full bg-rosa-light text-rosa-dark font-medium text-sm mb-6">
+                        Sfogliatine Artigianali
+                    </span>
+                    <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-testo mb-6 leading-tight">
+                        Rustici Mignon per <span class="text-rosa">Feste</span> a Roma
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-6 leading-relaxed">
+                        I nostri rustici mignon sono piccole opere d'arte culinaria: sfoglia dorata e croccante
+                        che racchiude ripieni cremosi e saporiti. Il finger food perfetto per ogni occasione speciale.
+                    </p>
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="flex items-center gap-1">
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        </div>
+                        <span class="text-gray-600">4.9/5 (156 recensioni)</span>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="/preventivo/" class="btn btn-primary text-lg">
+                            Ordina Ora
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                        <a href="tel:+393331234567" class="btn btn-outline text-lg">
+                            <i data-lucide="phone" class="w-5 h-5"></i>
+                            Chiama Ora
+                        </a>
+                    </div>
+                </div>
+                <div class="reveal reveal-delay-1">
+                    <img
+                        src="https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&q=80&w=800"
+                        alt="Rustici mignon per feste Roma"
+                        class="rounded-3xl shadow-hover w-full"
+                    >
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Description -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div class="reveal">
+                    <h2 class="font-heading text-4xl font-bold text-testo mb-6">Descrizione del Prodotto</h2>
+                    <div class="section-divider mb-8" style="margin: 0;"></div>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        I <strong>rustici mignon per feste a Roma</strong> sono la nostra specialita piu apprezzata.
+                        Sfoglia preparata artigianalmente, stesa sottile e cotta fino a raggiungere
+                        quella croccantezza perfetta che fa la differenza.
+                    </p>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        Ogni rustico viene farcito a mano con ripieni preparati freschi: dalla classica combinazione
+                        prosciutto e mozzarella alle varianti piu ricercate come salmone e philadelphia o
+                        verdure grigliate e stracchino.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Perfetti per <a href="/catering-feste-bambini-roma/" class="text-rosa hover:text-rosa-dark">feste di compleanno</a>,
+                        <a href="/catering-18-anni-roma/" class="text-rosa hover:text-rosa-dark">diciottesimi</a>,
+                        aperitivi aziendali e <a href="/catering-matrimoni-roma/" class="text-rosa hover:text-rosa-dark">matrimoni</a>.
+                        La dimensione mignon li rende eleganti e facili da gustare.
+                    </p>
+                </div>
+                <div class="reveal reveal-delay-1">
+                    <div class="bg-grigio p-8 rounded-2xl">
+                        <h3 class="font-heading text-2xl font-bold mb-6">Caratteristiche</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-rosa flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <strong>Sfoglia artigianale</strong>
+                                    <p class="text-gray-600 text-sm">100% burro, lavorata a mano</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-rosa flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <strong>Cottura perfetta</strong>
+                                    <p class="text-gray-600 text-sm">Dorati e croccanti al punto giusto</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-rosa flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <strong>Ripieni generosi</strong>
+                                    <p class="text-gray-600 text-sm">Farciture abbondanti e di qualita</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-rosa flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <strong>Formato mignon</strong>
+                                    <p class="text-gray-600 text-sm">Circa 5x5 cm, perfetti per un boccone</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-rosa flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <strong>Ampia scelta</strong>
+                                    <p class="text-gray-600 text-sm">Oltre 10 varianti disponibili</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section class="py-20 bg-grigio">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-heading text-4xl font-bold text-testo mb-4">Le Nostre Varianti</h2>
+                <div class="section-divider mt-4"></div>
+                <p class="text-gray-600 mt-6">Scopri tutti i gusti disponibili per i tuoi rustici</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-bianco p-6 rounded-2xl border-2 border-rosa reveal">
+                    <h3 class="font-heading text-lg font-bold mb-2">Prosciutto e Mozzarella</h3>
+                    <p class="text-gray-600 text-sm mb-3">Il grande classico: prosciutto cotto e mozzarella filante</p>
+                    <span class="text-rosa font-bold text-sm">Bestseller</span>
+                </div>
+                <div class="bg-bianco p-6 rounded-2xl reveal reveal-delay-1">
+                    <h3 class="font-heading text-lg font-bold mb-2">Wurstel e Ketchup</h3>
+                    <p class="text-gray-600 text-sm mb-3">Amato dai bambini: wurstel e un tocco di ketchup</p>
+                    <span class="text-gray-500 text-sm">Perfetto per feste bambini</span>
+                </div>
+                <div class="bg-bianco p-6 rounded-2xl reveal reveal-delay-2">
+                    <h3 class="font-heading text-lg font-bold mb-2">Spinaci e Ricotta</h3>
+                    <p class="text-gray-600 text-sm mb-3">Delicato: spinaci freschi e ricotta cremosa</p>
+                    <span class="text-gray-500 text-sm">Vegetariano</span>
+                </div>
+                <div class="bg-bianco p-6 rounded-2xl reveal reveal-delay-3">
+                    <h3 class="font-heading text-lg font-bold mb-2">Salmone e Philadelphia</h3>
+                    <p class="text-gray-600 text-sm mb-3">Raffinato: salmone affumicato e formaggio spalmabile</p>
+                    <span class="text-gray-500 text-sm">Elegante</span>
+                </div>
+                <div class="bg-bianco p-6 rounded-2xl reveal">
+                    <h3 class="font-heading text-lg font-bold mb-2">Pomodoro e Mozzarella</h3>
+                    <p class="text-gray-600 text-sm mb-3">Mediterraneo: pomodoro fresco e mozzarella</p>
+                    <span class="text-gray-500 text-sm">Vegetariano</span>
+                </div>
+                <div class="bg-bianco p-6 rounded-2xl reveal reveal-delay-1">
+                    <h3 class="font-heading text-lg font-bold mb-2">Patate e Rosmarino</h3>
+                    <p class="text-gray-600 text-sm mb-3">Rustico: crema di patate con rosmarino fresco</p>
+                    <span class="text-gray-500 text-sm">Vegetariano</span>
+                </div>
+                <div class="bg-bianco p-6 rounded-2xl reveal reveal-delay-2">
+                    <h3 class="font-heading text-lg font-bold mb-2">Speck e Brie</h3>
+                    <p class="text-gray-600 text-sm mb-3">Gourmet: speck dell'Alto Adige e brie cremoso</p>
+                    <span class="text-gray-500 text-sm">Premium</span>
+                </div>
+                <div class="bg-bianco p-6 rounded-2xl reveal reveal-delay-3">
+                    <h3 class="font-heading text-lg font-bold mb-2">Verdure Grigliate</h3>
+                    <p class="text-gray-600 text-sm mb-3">Leggero: zucchine, melanzane e peperoni con stracchino</p>
+                    <span class="text-gray-500 text-sm">Vegetariano</span>
+                </div>
+            </div>
+
+            <div class="text-center mt-12 reveal">
+                <p class="text-gray-600">Altre varianti disponibili su richiesta. Contattaci per personalizzare il tuo ordine!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-heading text-4xl font-bold text-testo mb-4">Prezzi e Quantita</h2>
+                <div class="section-divider mt-4"></div>
+                <p class="text-gray-600 mt-6">Scegli la quantita ideale per il tuo evento</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="pricing-card reveal">
+                    <h3 class="font-heading text-2xl font-bold mb-2">Piccolo</h3>
+                    <p class="text-gray-500 mb-4">Ideale per 10-15 persone</p>
+                    <p class="font-heading text-4xl font-bold text-rosa mb-2">50 pezzi</p>
+                    <p class="text-2xl font-bold text-testo mb-6">da 60,00 Euro</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-rosa"></i> 1,20 Euro/pezzo</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-rosa"></i> 2 gusti a scelta</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-rosa"></i> Consegna inclusa*</li>
+                    </ul>
+                    <a href="/preventivo/" class="btn btn-outline w-full">Ordina Ora</a>
+                </div>
+
+                <div class="pricing-card featured reveal reveal-delay-1">
+                    <span class="pricing-badge">Piu scelto</span>
+                    <h3 class="font-heading text-2xl font-bold mb-2">Medio</h3>
+                    <p class="text-gray-500 mb-4">Ideale per 20-30 persone</p>
+                    <p class="font-heading text-4xl font-bold text-rosa mb-2">100 pezzi</p>
+                    <p class="text-2xl font-bold text-testo mb-6">da 110,00 Euro</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-rosa"></i> 1,10 Euro/pezzo</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-rosa"></i> 4 gusti a scelta</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-rosa"></i> Consegna inclusa*</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-rosa"></i> Vassoi eleganti</li>
+                    </ul>
+                    <a href="/preventivo/" class="btn btn-primary w-full">Ordina Ora</a>
+                </div>
+
+                <div class="pricing-card reveal reveal-delay-2">
+                    <h3 class="font-heading text-2xl font-bold mb-2">Grande</h3>
+                    <p class="text-gray-500 mb-4">Ideale per 40+ persone</p>
+                    <p class="font-heading text-4xl font-bold text-rosa mb-2">200 pezzi</p>
+                    <p class="text-2xl font-bold text-testo mb-6">da 200,00 Euro</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-rosa"></i> 1,00 Euro/pezzo</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-rosa"></i> 6 gusti a scelta</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-rosa"></i> Consegna inclusa*</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-rosa"></i> Vassoi premium</li>
+                    </ul>
+                    <a href="/preventivo/" class="btn btn-outline w-full">Ordina Ora</a>
+                </div>
+            </div>
+
+            <p class="text-center text-gray-500 text-sm mt-8">*Consegna gratuita in Roma Nord. Altre zone su richiesta.</p>
+        </div>
+    </section>
+
+    <!-- How to Order -->
+    <section class="py-20 bg-grigio">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-heading text-4xl font-bold text-testo mb-4">Come Ordinare</h2>
+                <div class="section-divider mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+                <div class="text-center reveal">
+                    <div class="w-16 h-16 bg-rosa rounded-full flex items-center justify-center mx-auto mb-4 text-bianco font-heading text-2xl font-bold">1</div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Scegli i Gusti</h3>
+                    <p class="text-gray-600 text-sm">Seleziona le varianti preferite tra le nostre proposte</p>
+                </div>
+                <div class="text-center reveal reveal-delay-1">
+                    <div class="w-16 h-16 bg-rosa rounded-full flex items-center justify-center mx-auto mb-4 text-bianco font-heading text-2xl font-bold">2</div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Indica la Quantita</h3>
+                    <p class="text-gray-600 text-sm">Calcola circa 3-4 rustici a persona per un buffet</p>
+                </div>
+                <div class="text-center reveal reveal-delay-2">
+                    <div class="w-16 h-16 bg-rosa rounded-full flex items-center justify-center mx-auto mb-4 text-bianco font-heading text-2xl font-bold">3</div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Conferma l'Ordine</h3>
+                    <p class="text-gray-600 text-sm">Conferma data, orario e indirizzo di consegna</p>
+                </div>
+                <div class="text-center reveal reveal-delay-3">
+                    <div class="w-16 h-16 bg-rosa rounded-full flex items-center justify-center mx-auto mb-4 text-bianco font-heading text-2xl font-bold">4</div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Ricevi a Domicilio</h3>
+                    <p class="text-gray-600 text-sm">Consegna puntuale il giorno del tuo evento</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12 reveal">
+                <p class="text-gray-600 mb-4">Ordine minimo: 50 pezzi | Preavviso: almeno 48 ore</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="/preventivo/" class="btn btn-primary">Richiedi Preventivo</a>
+                    <a href="https://wa.me/393331234567" class="btn btn-outline">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suggested Pairings -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-heading text-4xl font-bold text-testo mb-4">Abbinamenti Consigliati</h2>
+                <div class="section-divider mt-4"></div>
+                <p class="text-gray-600 mt-6">Completa il tuo buffet con questi prodotti</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="/pizzette-rosse-catering-roma/" class="card p-6 reveal">
+                    <div class="h-40 rounded-xl overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=400" alt="Pizzette rosse catering" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Pizzette Rosse</h3>
+                    <p class="text-gray-600 text-sm mb-3">Il classico intramontabile per ogni buffet</p>
+                    <span class="text-rosa font-medium text-sm">Scopri &rarr;</span>
+                </a>
+                <a href="/tramezzini-feste-roma/" class="card p-6 reveal reveal-delay-1">
+                    <div class="h-40 rounded-xl overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&q=80&w=400" alt="Tramezzini per feste" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Tramezzini Assortiti</h3>
+                    <p class="text-gray-600 text-sm mb-3">Freschi e leggeri, amati da tutti</p>
+                    <span class="text-rosa font-medium text-sm">Scopri &rarr;</span>
+                </a>
+                <a href="/bottoncini-farciti-feste-roma/" class="card p-6 reveal reveal-delay-2">
+                    <div class="h-40 rounded-xl overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&q=80&w=400" alt="Bottoncini farciti" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Bottoncini Farciti</h3>
+                    <p class="text-gray-600 text-sm mb-3">Morbidi bocconcini con ripieni sfiziosi</p>
+                    <span class="text-rosa font-medium text-sm">Scopri &rarr;</span>
+                </a>
+                <a href="/catering-feste-bambini-roma/" class="card p-6 reveal reveal-delay-3">
+                    <div class="h-40 rounded-xl overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1530103862676-de3c9da59af7?auto=format&fit=crop&q=80&w=400" alt="Buffet completo bambini" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Buffet Completo</h3>
+                    <p class="text-gray-600 text-sm mb-3">Pacchetto tutto incluso per feste bambini</p>
+                    <span class="text-rosa font-medium text-sm">Scopri &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-grigio">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="font-heading text-4xl font-bold text-testo mb-4">Domande Frequenti</h2>
+                    <div class="section-divider mt-4"></div>
+                </div>
+
+                <div class="space-y-0 reveal">
+                    <div class="faq-item bg-bianco rounded-t-2xl px-6">
+                        <button class="faq-question">
+                            Quanti rustici servono a persona?
+                            <i data-lucide="plus" class="w-5 h-5 faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="text-gray-600 pb-4">Per un buffet vario consigliamo 3-4 rustici a persona. Se i rustici sono l'elemento principale, calcolate 5-6 pezzi a testa.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item bg-bianco px-6">
+                        <button class="faq-question">
+                            I rustici arrivano caldi e croccanti?
+                            <i data-lucide="plus" class="w-5 h-5 faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="text-gray-600 pb-4">Li consegniamo appena sfornati. Per mantenerli al meglio, suggeriamo di servirli entro 30 minuti o di riscaldarli 5 minuti in forno a 180 gradi per ritrovare la croccantezza perfetta.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item bg-bianco px-6">
+                        <button class="faq-question">
+                            Posso creare un mix personalizzato?
+                            <i data-lucide="plus" class="w-5 h-5 faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="text-gray-600 pb-4">Assolutamente si! Potete scegliere i gusti che preferite. Consigliamo almeno 3-4 varianti diverse per accontentare tutti i gusti dei vostri ospiti.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item bg-bianco px-6">
+                        <button class="faq-question">
+                            La sfoglia contiene burro?
+                            <i data-lucide="plus" class="w-5 h-5 faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="text-gray-600 pb-4">Si, la nostra sfoglia e preparata con burro di alta qualita per garantire croccantezza e sapore. Su richiesta anticipata, possiamo preparare varianti con margarina vegetale.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item bg-bianco rounded-b-2xl px-6">
+                        <button class="faq-question">
+                            Avete opzioni vegetariane?
+                            <i data-lucide="plus" class="w-5 h-5 faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="text-gray-600 pb-4">Certamente! Offriamo diverse opzioni vegetariane: spinaci e ricotta, pomodoro e mozzarella, patate e rosmarino, verdure grigliate. Segnalateci le esigenze e prepareremo il mix perfetto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-rosa">
+        <div class="container mx-auto px-6 text-center reveal">
+            <h2 class="font-heading text-4xl md:text-5xl font-bold text-bianco mb-6">
+                Ordina i tuoi Rustici Mignon
+            </h2>
+            <p class="text-bianco/90 text-xl mb-8 max-w-2xl mx-auto">
+                Richiedi un preventivo gratuito e ricevi una proposta personalizzata entro 24 ore.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/preventivo/" class="btn bg-bianco text-rosa hover:bg-grigio text-lg">
+                    Richiedi Preventivo <i data-lucide="send" class="w-5 h-5"></i>
+                </a>
+                <a href="https://wa.me/393331234567" class="btn bg-transparent border-2 border-bianco text-bianco hover:bg-bianco hover:text-rosa text-lg">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-testo text-bianco pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="font-heading text-2xl font-bold mb-4">Pronto<span class="text-rosa">Festa</span></h3>
+                    <p class="text-gray-400 mb-6">Catering artigianale a Roma per feste ed eventi speciali.</p>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-4">Prodotti</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/pizzette-rosse-catering-roma/" class="text-gray-400 hover:text-rosa">Pizzette Rosse</a></li>
+                        <li><a href="/tramezzini-feste-roma/" class="text-gray-400 hover:text-rosa">Tramezzini</a></li>
+                        <li><a href="/rustici-mignon-roma/" class="text-rosa">Rustici Mignon</a></li>
+                        <li><a href="/bottoncini-farciti-feste-roma/" class="text-gray-400 hover:text-rosa">Bottoncini Farciti</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-4">Servizi</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/catering-feste-bambini-roma/" class="text-gray-400 hover:text-rosa">Feste Bambini</a></li>
+                        <li><a href="/catering-18-anni-roma/" class="text-gray-400 hover:text-rosa">Feste 18 Anni</a></li>
+                        <li><a href="/catering-matrimoni-roma/" class="text-gray-400 hover:text-rosa">Matrimoni</a></li>
+                        <li><a href="/catering-a-domicilio-roma/" class="text-gray-400 hover:text-rosa">A Domicilio</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-4">Contatti</h4>
+                    <ul class="space-y-3">
+                        <li><a href="tel:+393331234567" class="flex items-center gap-2 text-gray-400 hover:text-rosa"><i data-lucide="phone" class="w-4 h-4"></i> +39 333 123 4567</a></li>
+                        <li><a href="mailto:info@prontofesta.com" class="flex items-center gap-2 text-gray-400 hover:text-rosa"><i data-lucide="mail" class="w-4 h-4"></i> info@prontofesta.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center text-gray-500 text-sm">
+                &copy; 2024 Pronto Festa Roma. P.IVA 01234567890
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/393331234567" target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
